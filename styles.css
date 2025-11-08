@@ -7,143 +7,88 @@
 
 /* ---- Global Styles ---- */
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: linear-gradient(to right, #3b3b98, #3c40c6, #1b1464);
-  margin: 0;
-  padding: 0;
-  color: #f0f0f0;
+    background: linear-gradient(to right, purple, blue, navy); /* Gradient background */
+    font-family: Arial, Helvetica, sans-serif; /* Web-safe font */
+    margin: 0;
+    padding: 0;
 }
 
-/* ---- Header ---- */
+/* Header Section */
 header {
-  text-align: center;
-  background-color: #4b0082;
-  color: white;
-  padding: 25px 0;
-  font-size: 2em;
-  font-weight: bold;
-  letter-spacing: 1px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center; /* Center text */
+    font-size: 2em; /* Larger font size */
+    font-weight: bold; /* Bold text */
+    padding: 20px;
+    background-color: navy; /* Navy background */
+    color: white; /* White text for contrast */
 }
 
-/* ---- Navigation Menu ---- */
+/* Navigation Menu */
 nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 12px 0;
-  background-color: #1e3a8a;
-  display: flex;
-  justify-content: center;
-  gap: 40px;
+    list-style-type: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Horizontal layout */
+    justify-content: center;
+    background-color: purple; /* Purple background */
+}
+
+nav ul li {
+    margin: 0 15px;
 }
 
 nav ul li a {
-  text-decoration: none;
-  color: #bbdefb;
-  font-weight: bold;
-  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
-  padding: 6px 12px;
-  border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    transition: background-color 0.3s ease; /* Smooth transition */
 }
 
 nav ul li a:hover {
-  background-color: #3f51b5;
-  color: #ffffff;
+    background-color: blue;
+    color: #f9f7f7;
+    border-radius: 5px;
 }
 
-/* ---- Main Sections ---- */
+/* Main Section Hover Effect */
 main section {
-  background-color: rgba(255, 255, 255, 0.1);
-  margin: 30px auto;
-  padding: 20px;
-  max-width: 850px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 10px;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease; /* Section zoom effect */
+    padding: 20px;
+    margin: 20px;
+    background-color: #f9f7f7;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease; /* Smooth zoom effect */
 }
 
 main section:hover {
-  transform: scale(1.02); /* Zoom in on hover */
+    transform: scale(1.02); /* Zoom in slightly */
 }
 
-main h2 {
-  color: #bb86fc;
-  border-bottom: 2px solid #3f51b5;
-  padding-bottom: 5px;
-}
-
-main p {
-  line-height: 1.6;
-  color: #e3f2fd;
-}
-
-/* ---- Table Styling ---- */
+/* Table Styling */
 table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-  background-color: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 100%; /* Full width */
+    border-collapse: collapse;
+    margin-top: 20px;
 }
 
-caption {
-  caption-side: top;
-  font-weight: bold;
-  color: #bb86fc;
-  padding: 10px;
-  text-align: center;
+table caption {
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
-th, td {
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  padding: 12px;
-  text-align: center;
-  color: #e3f2fd;
+table th, table td {
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: center;
 }
 
-thead {
-  background-color: #3f51b5; /* Blue header background */
+table thead {
+    background-color: navy; /* Header background */
+    color: white;
 }
 
-tfoot td {
-  font-style: italic;
-  background-color: #1e3a8a;
-  color: #ffffff;
-}
-
-table img {
-  width: 100px;
-  border-radius: 5px;
-}
-
-/* ---- Footer ---- */
-footer {
-  background-color: #0d1b2a;
-  color: #c5cae9;
-  text-align: center;
-  font-size: 0.9em;
-  padding: 15px 0;
-  margin-top: 40px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-/* ---- Responsive Design ---- */
-@media (max-width: 600px) {
-  nav ul {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  header {
-    font-size: 1.6em;
-  }
-
-  main section {
-    width: 90%;
-  }
-
-  table, th, td {
-    font-size: 0.9em;
-  }
+table tfoot {
+    background-color: purple;
+    color: white;
 }
