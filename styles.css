@@ -7,80 +7,64 @@
 
 /* ---- Global Styles ---- */
 body {
-  font-family: Arial, Helvetica, sans-serif; /* Readable web-safe font */
-  background: linear-gradient(to right, #e0f7fa, #e1bee7); /* Soft gradient background */
-  margin: 0;
-  padding: 0;
-  color: #333; /* Neutral text color */
+    background: linear-gradient(to right, purple, blue, navy); /* Gradient background */
+    font-family: Arial, Helvetica, sans-serif; /* Web-safe font */
+    margin: 0;
+    padding: 0;
 }
 
-/* ---- Header ---- */
+/* Header Section */
 header {
-  text-align: center; /* Center header text */
-  background-color: #6200ea; /* Deep purple background */
-  color: white;
-  padding: 20px;
-  font-size: 2em;
-  font-weight: bold;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    text-align: center; /* Center text */
+    font-size: 2em; /* Larger font size */
+    font-weight: bold; /* Bold text */
+    padding: 20px;
+    background-color: navy; /* Navy background */
+    color: white; /* White text for contrast */
 }
 
-/* ---- Navigation Menu ---- */
+/* Navigation Menu */
 nav ul {
-  list-style-type: none; /* Remove bullets */
-  margin: 0;
-  padding: 10px 0;
-  background-color: #7e57c2; /* Matching theme color */
-  display: flex; /* Horizontal layout */
-  justify-content: center;
-  gap: 30px; /* Space between links */
+    list-style-type: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Horizontal layout */
+    justify-content: center;
+    background-color: purple; /* Purple background */
+}
+
+nav ul li {
+    margin: 0 15px;
 }
 
 nav ul li a {
-  text-decoration: none; /* Remove underlines */
-  color: white;
-  font-weight: bold;
-  transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
 }
 
 nav ul li a:hover {
-  color: #ffeb3b; /* Bright yellow text on hover */
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 5px 10px;
-  border-radius: 5px;
+    background-color: blue; /* Blue hover effect */
+    color: #f9f7f7;
+    border-radius: 5px;
 }
 
-/* ---- Main Sections ---- */
+/* Main Sections */
 main section {
-  background-color: #ffffff; /* White background for readability */
-  margin: 30px auto;
-  padding: 20px;
-  max-width: 800px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    padding: 20px;
+    margin: 20px;
+    background-color: #f9f7f7; /* Light background for readability */
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1); /* Subtle shadow */
+    border-radius: 8px;
 }
 
-/* Section headers */
-main h2 {
-  color: #6200ea;
-  border-bottom: 2px solid #6200ea;
-  padding-bottom: 5px;
-}
-
-/* ---- Footer ---- */
+/* Footer */
 footer {
-  background-color: #311b92; /* Dark contrasting background */
-  color: white;
-  text-align: center;
-  font-size: 0.9em; /* Smaller text */
-  padding: 15px 0;
-  margin-top: 40px;
-}
-
-/* ---- Responsive Design (optional bonus) ---- */
-@media (max-width: 600px) {
-  nav ul {
-    flex-direction: column; /* Stack links on small screens */
-  }
+    text-align: center;
+    font-size: 0.8em; /* Smaller font */
+    background-color: navy; /* Navy background */
+    color: white; /* White text */
+    padding: 10px;
 }
