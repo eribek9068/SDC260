@@ -52,6 +52,7 @@ header h1 {
 .nav-menu li a:hover {
   background-color: #3B82F6;
   color: #0A0F24;
+  border-radius: 5px;
 }
 
 /* ----- Main Layout (Flexbox) ----- */
