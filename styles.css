@@ -9,35 +9,22 @@
 body {
   font-family: "Arial", sans-serif;
   background: linear-gradient(to right, #3a0ca3, #4361ee, #240046);
-  color: #f4f4f4;
+  color: #b2beb5; /* ash grey for body text */
   margin: 0;
   padding: 0;
 }
 
 /* ---- Header ---- */
-header {
-  text-align: center;
-  background-color: #240046;
-  padding: 20px;
-}
-
 header h1 {
   font-size: 2em;
   font-weight: 700;
+  color: #1e3a8a; /* deep blue for header title */
 }
 
 /* ---- Navigation Menu ---- */
-.nav-menu {
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  padding: 0;
-}
-
 .nav-menu li a {
   text-decoration: none;
-  color: #e0e0ff;
+  color: #a9a9a9; /* metallic grey for nav links */
   font-weight: bold;
   transition: background-color 0.3s ease;
   padding: 8px 14px;
@@ -45,152 +32,63 @@ header h1 {
 }
 
 .nav-menu li a:hover {
-  background-color: #7209b7;
+  background-color: #4361ee; /* blue hover effect */
+  color: #fff; /* contrast on hover */
 }
 
-/* ----- Main Layout (Flexbox) ----- */
-.main-flex {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  padding: 20px;
-}
-
-/* ----- Section Styling ----- */
+/* ---- Section Styling ---- */
 section {
   background-color: rgba(255, 255, 255, 0.08);
   padding: 20px;
   border-radius: 10px;
   transition: transform 0.3s ease;
+  color: #b2beb5; /* ash grey for section text */
 }
 
-section:hover {
-  transform: scale(1.02);
-}
-
-/* ----- Projects Table ----- */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-  background-color: #f9f9ff;
-  color: #000;
-  box-shadow: 0 0 10px rgba(0,0,50,0.2);
-}
-
+/* ---- Projects Table ---- */
 caption {
   caption-side: top;
   font-weight: bold;
-  color: #3a0ca3;
-  padding: 10px;
-}
-
-th, td {
-  border: 1px solid #888;
-  padding: 12px;
+  color: #1e3a8a; /* blue for table caption */
 }
 
 th {
   background-color: #3a0ca3;
-  color: white;
+  color: #a9a9a9; /* metallic grey for table headers */
 }
 
-tfoot td {
-  text-align: center;
-  background-color: #240046;
-  color: #fff;
-  padding: 10px;
+td {
+  color: #b2beb5; /* ash grey for table cells */
 }
 
-table img {
-  display: block;
-  margin: auto;
-  border-radius: 8px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.3);
-}
-
-/* ----- Contact Form Styling ----- */
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
+/* ---- Contact Form ---- */
 .contact-form label {
   font-weight: bold;
-  color: #e0e0ff;
+  color: #1e3a8a; /* blue labels */
 }
 
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form textarea {
-  width: 100%;
-  padding: 10px;
-  border: 2px solid #7209b7;
-  border-radius: 5px;
-  background-color: #fff;
-  color: #000;
-  transition: border-color 0.3s ease;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-  border-color: #4361ee;
-  outline: none;
+  color: #000; /* keep inputs readable */
+  border: 2px solid #a9a9a9; /* metallic grey border */
 }
 
 .contact-form input[type="submit"] {
-  background-color: #7209b7;
+  background-color: #1e3a8a; /* blue button */
   color: #fff;
-  font-weight: bold;
-  border: none;
-  padding: 12px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
 .contact-form input[type="submit"]:hover {
-  background-color: #4361ee;
+  background-color: #a9a9a9; /* metallic grey hover */
+  color: #240046;
 }
 
-/* ----- Footer ----- */
+/* ---- Footer ---- */
 footer {
   text-align: center;
   background-color: #240046;
   padding: 15px;
   font-size: 0.9em;
+  color: #b2beb5; /* ash grey footer text */
 }
-
-/* ----- Responsive Design ----- */
-@media (max-width: 768px) {
-  .main-flex {
-    flex-direction: column;
-    padding: 10px;
-  }
-
-  .nav-menu {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .contact-form {
-    width: 90%;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1200px) {
-  .main-flex {
-    flex-direction: column;
-  }
-}
-
-@media (min-width: 1201px) {
-  .main-flex {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-}
-
