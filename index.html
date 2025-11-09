@@ -8,19 +8,19 @@
 
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="description" content="Personal homepage for web development projects" />
-    <meta name="keywords" content="HTML, CSS, GitHub Pages, portfolio" />
-    <meta name="author" content="eribek9068" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to My GitHub Page</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="description" content="ERIBEK9068 Portfolio - Exploring the fusion of creativity and code">
+  <meta name="keywords" content="HTML, CSS, Portfolio, Web Design, ERIBEK9068">
+  <meta name="author" content="ERIBEK9068">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ERIBEK9068 | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
   </head>
 
   <body>
     <header>
       <h1> MY Digital Forge </h1>
-    </header>
+    
 
     <!-- Navigation menu -->
     <nav>
@@ -30,8 +30,9 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
+    </header>
 
-    <main>
+ <main class="main-flex">
       <!-- About Section -->
        <section id="about">
         <h2>About</h2>
@@ -47,58 +48,58 @@
         </p>
         <p>
           Fueled by curiosity, ERIBEK9068 wanders through the ever-evolving archives of the Net, uncovering the language of tomorrow. From the adaptive harmony of Flexbox to the ethereal movement of
-          CSS animations that mirror the aurora’s light, every discovery feeds a relentless pursuit of creativity. In this futuristic forge, innovation blooms like neon flora in the void — and
+          CSS animations that mirror the aurora’s light, every discovery feeds a relentless pursuit of creativity. In this futuristic forge, innovation blooms like neon flora in the void and
           ERIBEK9068 continues to build, refine, and connect, weaving the human spark through the symphony of the machine.
         </p>
       </section>
 
       <!-- Projects Section -->
 <section id="projects">
-  <h2>Projects</h2>
-  <p>Below are two sample projects showcasing my web development learning journey.</p>
+      <h2>Projects</h2>
+      <p>Below are two sample projects showcasing my web development learning journey.</p>
 
-  <table>
-    <caption>ERIBEK9068 Sample Projects</caption>
-    <colgroup>
-      <col style="background-color: rgba(128, 0, 128, 0.1);">
-      <col>
-      <col style="background-color: rgba(0, 0, 128, 0.1);">
-    </colgroup>
+      <table>
+        <caption>ERIBEK9068 Sample Projects</caption>
+        <colgroup>
+          <col style="background-color: rgba(128, 0, 128, 0.1);">
+          <col>
+          <col style="background-color: rgba(0, 0, 128, 0.1);">
+        </colgroup>
 
-    <thead>
-      <tr>
-        <th>Project Name</th>
-        <th>Description</th>
-        <th>Preview</th>
-      </tr>
-    </thead>
+        <thead>
+          <tr>
+            <th>Project Name</th>
+            <th>Description</th>
+            <th>Preview</th>
+          </tr>
+        </thead>
 
-    <tbody>
-      <tr>
-        <td>Sports Talk</td>
-        <td>
-          A classic-style sports news layout built using HTML and CSS. 
-          This project demonstrates semantic structure, alignment, and sidebar navigation design.
-        </td>
-        <td><img src="Project 1.png" alt="Sports Talk Project Screenshot" width="250"></td>
-      </tr>
-      <tr>
-        <td>Sonnet 116</td>
-        <td>
-          A creative text presentation of Shakespeare’s <em>Sonnet 116</em> using styled typography and borders. 
-          It explores the use of font families, alignment, and text shadow for visual poetry.
-        </td>
-        <td><img src="Project 2.png" alt="Sonnet 116 Project Screenshot" width="250"></td>
-      </tr>
-    </tbody>
+        <tbody>
+          <tr>
+            <td>Sports Talk</td>
+            <td>
+              A classic-style sports news layout built using HTML and CSS.
+              Demonstrates semantic structure, alignment, and sidebar navigation.
+            </td>
+            <td><img src="Project 1.png" alt="Sports Talk Project Screenshot" width="250"></td>
+          </tr>
+          <tr>
+            <td>Sonnet 116</td>
+            <td>
+              A creative text presentation of Shakespeare’s <em>Sonnet 116</em> using styled typography and borders.
+              Explores font families, alignment, and visual poetry with CSS.
+            </td>
+            <td><img src="Project 2.png" alt="Sonnet 116 Project Screenshot" width="250"></td>
+          </tr>
+        </tbody>
 
-    <tfoot>
-      <tr>
-        <td colspan="3">More projects coming soon as I continue exploring front-end development!</td>
-      </tr>
-    </tfoot>
-  </table>
-</section>
+        <tfoot>
+          <tr>
+            <td colspan="3">More projects coming soon!</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
 
       <!-- Contact Section -->
       <section id="contact">
@@ -107,6 +108,22 @@
           Want to collaborate or connect? Reach out through my GitHub profile or email me at
           <a href="mailto:yourname@example.com">eribek9068@students.ecpi.edu</a>.
         </p>
+         <p>Or send a message below.</p>
+      <form class="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject">
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5"></textarea>
+
+        <input type="submit" value="Send Message">
+      </form>
       </section>
     </main>
 
